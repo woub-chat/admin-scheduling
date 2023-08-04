@@ -1,0 +1,33 @@
+{
+    "name": "bfg/admin-scheduling",
+    "description": "Task scheduling extension for bfg admin",
+    "type": "lar-lte-admin-extension",
+    "keywords": ["laravel", "bfg", "lte", "admin", "extension", "admin-scheduling"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bfg"
+        }
+    ],
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.3.0",
+        "bfg/admin": "^5.3.6"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Admin\\Extend\\AdminScheduling\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Admin\\Extend\\AdminScheduling\\ServiceProvider"
+            ]
+        }
+    }
+}
