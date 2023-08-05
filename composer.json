@@ -1,7 +1,7 @@
 {
     "name": "bfg/admin-scheduling",
     "description": "Task scheduling extension for bfg admin",
-    "type": "lar-lte-admin-extension",
+    "type": "bfg-admin-extension",
     "keywords": ["laravel", "bfg", "lte", "admin", "extension", "admin-scheduling"],
     "license": "MIT",
     "authors": [
