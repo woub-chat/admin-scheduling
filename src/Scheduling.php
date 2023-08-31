@@ -115,6 +115,10 @@ class Scheduling
             $this->sendOutputTo = storage_path('app/task-schedule.output');
         }
 
+        if (! is_file($this->sendOutputTo)) {
+            file_put_contents($this->sendOutputTo, '');
+        }
+
         return $this->sendOutputTo;
     }
 
